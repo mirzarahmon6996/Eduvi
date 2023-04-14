@@ -1,0 +1,218 @@
+.quality {
+  margin-top: 150px;
+}
+.quality__wrapper {
+  width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+.quality__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #0a033c;
+  margin: 0 auto;
+  width: 556px;
+}
+.quality__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  width: 840px;
+  margin: 20px auto;
+  color: #5d5a6f;
+}
+.quality__button {
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+  background: #9c4df4;
+  border-radius: 10px;
+  border: none;
+  transition: all ease 0.5s;
+}
+.quality__button:hover {
+  box-shadow: 1px 1px 10px 1px #9c4df4;
+  transition: all ease 0.5s;
+  transform: translateY(-5px);
+}
+.quality__block {
+  width: 1060px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 610px;
+  box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  background-color: white;
+  margin: 60px auto;
+  position: relative;
+}
+.quality__box {
+  width: 1000px;
+  height: 570px;
+  background-image: url("../img/quality-img.png");
+  border-radius: 20px;
+}
+.quality__content {
+  width: 180px;
+  height: 216px;
+  background-color: white;
+  box-shadow: 0px 50px 170px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  top: 340px;
+  left: 65px;
+}
+.quality__content img {
+  width: 158px;
+  height: 194px;
+  border-radius: 10px;
+}
+.quality__content-second {
+  width: 60px;
+  height: 60px;
+  background-color: #ff6652;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 230px;
+  left: 470px;
+}
+.quality__content-third {
+  width: 60px;
+  height: 60px;
+  background-color: #9c4df4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 180px;
+  left: 900px;
+}
+.quality__aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+.quality__wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 333px;
+  transition: all ease 0.5s;
+  padding: 15px;
+}
+.quality__wrap:hover .aside__box {
+  background-color: white;
+  transition: all ease 0.5s;
+}
+
+.quality__wrap-second:hover .aside__box {
+  background-color: white;
+  transition: all ease 0.5s;
+}
+
+.quality__wrap-third:hover .aside__box {
+  background-color: white;
+  transition: all ease 0.5s;
+}
+.quality__wrap:hover .quality__text {
+  color: white;
+  transition: all ease 0.5s;
+}
+.quality__wrap:hover {
+  transform: translateY(-5px);
+  background-color: #ff6652;
+  transition: all ease 0.5s;
+  box-shadow: 2px 2px 10px 1px #ff6652;
+}
+.aside__box {
+  width: 70px;
+  height: 70px;
+  background: #fff4f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quality__wrap-second {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 333px;
+  transition: all ease 0.5s;
+  padding: 15px;
+}
+.quality__wrap-second:hover {
+  transform: translateY(-5px);
+  background-color: #9c4df4;
+  transition: all ease 0.5s;
+  box-shadow: 2px 2px 10px 1px  #9c4df4;
+}
+.quality__wrap-second:hover .quality__text {
+  color: white;
+  transition: all ease 0.5s;
+}
+.aside__box-second {
+  width: 70px;
+  height: 70px;
+  background: #f8f2ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quality__wrap-third {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border-radius: 10px;
+  width: 333px;
+  transition: all ease 0.5s;
+  padding: 15px;
+}
+.quality__wrap-third:hover {
+  transform: translateY(-5px);
+  background-color: #21ec8a;
+  transition: all ease 0.5s;
+  box-shadow: 2px 2px 10px 1px #21ec8a;
+}
+.quality__wrap-third:hover .quality__text {
+  color: white;
+  transition: all ease 0.5s;
+}
+.aside__box-third {
+  width: 70px;
+  height: 70px;
+  background: #e6fff3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quality__text {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  color: #0a033c;
+}

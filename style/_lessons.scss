@@ -1,0 +1,43 @@
+.lessons {
+  margin-top: 150px;
+}
+.lessons__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #0a033c;
+}
+.lessons__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #5d5a6f;
+  margin-top: 20px;
+}
+.lessons__box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 50px auto;
+  width: 500px;
+}
+.lessons__list {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 20px 30px;   
+  line-height: 20px;
+  color: #0a033c;
+  transition: all ease 0.5s;
+  border-radius: 10px;
+}
+.lessons__list:hover {
+  background: #ff6652;
+  box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+  border-radius: 10px;
+  padding: 20px 30px;
+  transition: all ease 0.3s;
+  border: none;
+  color: white;
+}
