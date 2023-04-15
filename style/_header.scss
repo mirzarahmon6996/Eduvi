@@ -1,3 +1,13 @@
+.header__fixed{
+  background-color: white;
+  padding-bottom: 20px;
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  transition: all ease 0.5s;
+}
 .header__block {
   margin-top: 30px;
   display: flex;
@@ -98,9 +108,38 @@
   text-align: right;
   color: #0a033c;
 }
-.header__right-list:hover{
+.header__right-list:hover {
   color: #ff6652;
 }
 .header__right-img {
   cursor: pointer;
+}
+.scroll {
+  position: absolute;
+  left: 20px;
+  top: 800px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #9c4df4;
+  border: none;
+  visibility: hidden;
+}
+.scroll img {
+  width: 40px;
+  height: 40px;
+}
+.add {
+  cursor: pointer;
+  position: fixed;
+  top: 630px;
+  left: 20px;
+  display: block;
+  background-color: #9c4df4;
+  visibility: visible;
+  transition: all ease 0.3s;
+  opacity: 0.5;
+}
+.add:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px 1 #9c4df4;
 }

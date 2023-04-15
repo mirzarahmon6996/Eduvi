@@ -26,7 +26,7 @@
 .lessons__list {
   font-weight: 500;
   font-size: 16px;
-  padding: 20px 30px;   
+  padding: 20px 30px;
   line-height: 20px;
   color: #0a033c;
   transition: all ease 0.5s;
@@ -40,4 +40,162 @@
   transition: all ease 0.3s;
   border: none;
   color: white;
+}
+.lessons__block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.lessons__wrapper {
+  width: 280px;
+  padding: 30px 15px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.5s;
+  border-radius: 15px;
+}
+.lessons__wrapper:hover {
+  transform: translateY(-7px);
+  transition: all ease 0.5s;
+  box-shadow: 3px 3px 15px 1px rgb(138, 136, 136);
+  cursor: pointer;
+}
+.lessons__wrapper:hover .lessons__btn {
+  background-color: #9c4df4;
+  color: white;
+  transition: all ease 0.5s;
+}
+.lessons__wrapper h2 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  margin-top: 20px;
+  color: #0a033c;
+}
+.lessons__wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 15px;
+  width: 260px;
+  color: #5d5a6f;
+}
+.lessons__btn {
+  padding: 16px 31px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border-color: #9c4df4;
+  border: 1px solid #9c4df4;
+  background-color: transparent;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: #9c4df4;
+  transition: all ease 0.5s;
+}
+.lessons__button {
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 510px;
+  color: #ffffff;
+  background: #9c4df4;
+  border-radius: 10px;
+  border: none;
+  transition: all ease 0.5s;
+}
+.lessons__button:hover {
+  box-shadow: 1px 1px 10px 1px #9c4df4;
+  transition: all ease 0.5s;
+  transform: translateY(-5px);
+}
+.person__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  margin-top: 120px;
+  border-radius: 20px;
+  height: 669px;
+  background-color: #ede9f2;
+  background-image: url("../img/lessons-bagimg.png");
+}
+.person__btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px 20px;
+  background: #e4e2f4;
+  border-radius: 10px;
+  border: none;
+  color: #9c4df4;
+  transition: all ease 0.4s;
+}
+.person__btn:hover {
+  transition: all ease 0.4s;
+  transform: translateY(-5px);
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 5px 1px rgb(105, 103, 103);
+  cursor: pointer;
+}
+.person__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  width: 457px;
+  margin-top: 15px;
+  color: #0a033c;
+}
+.person__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 500px;
+  margin-top: 20px;
+  color: #5d5a6f;
+}
+.person__btn--second {
+  padding: 20px 30px;
+  background: #9c4df4;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  margin-top: 40px;
+  color: #ffffff;
+  transition: all ease 0.4s;
+}
+.person__btn--second:hover {
+  transition: all ease 0.4s;
+  transform: translateY(-5px);
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 5px 1px rgb(105, 103, 103);
+  cursor: pointer;
+}
+.person_img-first {
+  position: relative;
+  left: 0;
+  top: -110px;
+}
+.person_img--second{
+  position: relative;
+  left: 230px;
+  top: -230px;
+}
+.person_img--third{
+  position: relative;
+  top: -30px;
+  left: -40px;
 }
