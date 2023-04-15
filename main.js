@@ -3,14 +3,22 @@ const input = document.querySelector(".boy__input");
 const button = document.querySelector(".scroll");
 const header = document.querySelector(".header__block");
 const fixed = document.querySelector("header");
-window.addEventListener("scroll" , (el) =>{
-  if(scrollY >= 50){
-    fixed.classList.add("header__fixed")
+const menu = document.querySelector(".header-burger");
+const ul = document.querySelector(".header__list");
+const crost = document.querySelector(".crost");
+menu.addEventListener("click", (el) => {
+  ul.classList.add("burger");
+});
+crost.addEventListener("click", (ev) => {
+  ul.classList.remove("burger");
+});
+window.addEventListener("scroll", (el) => {
+  if (scrollY >= 50) {
+    fixed.classList.add("header__fixed");
+  } else {
+    fixed.classList.remove("header__fixed");
   }
-  else{
-    fixed.classList.remove("header__fixed")
-  }
-})
+});
 window.addEventListener("scroll", (el) => {
   let scrol = this.scrollY;
   if (this.scrollY >= 100) {
