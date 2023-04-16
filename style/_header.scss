@@ -77,6 +77,9 @@
   position: relative;
   left: 0;
 }
+.bg__color{
+background-color: red;
+}
 .parag {
   position: absolute;
   left: 0;
@@ -101,17 +104,17 @@
   align-items: center;
   gap: 15px;
 }
-.header__right-list {
+.header__right__list {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
   color: #0a033c;
 }
-.header__right-list:hover {
+.header__right__list:hover {
   color: #ff6652;
 }
-.header__right-img {
+.header__right__img {
   cursor: pointer;
 }
 .scroll {
@@ -143,7 +146,7 @@
   opacity: 1;
   box-shadow: 1px 1px 5px 1 #9c4df4;
 }
-.header-burger{
+.header-burger {
   width: 30px;
   height: 30px;
 }
@@ -152,18 +155,64 @@
   align-items: center;
   gap: 10px;
 }
-.header__menu{
+.header__menu {
   display: none;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
   color: #0a033c;
 }
-.crost{
+.crost {
   display: none;
 }
-.header-burger{
+.header-burger {
   display: none;
+}
+.modal {
+  width: 1000px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 15px;
+  z-index: 10000;
+  position: fixed;
+  top: 90px;
+  left: 250px;
+  visibility: hidden;
+  transition: all ease 0.5s;
+  padding: 20px;
+  opacity: 0;
+}
+.modal__block {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+.modal__wrapper{
+  margin-left: 50px;
+}
+.modal__img {
+  cursor: 2;
+  position: relative;
+  left: 900px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+.modal__logo {
+  width: 80px;
+  height: 20px;
+}
+.modal__text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #0a033c;
+  margin-top: 15px;
+}
+.modal__person{
+  width: 332px;
+  height: 306px;
+  margin-top: 30px;
 }
 @media only screen and (max-width: 576px) {
   .container {
@@ -174,7 +223,7 @@
     width: 99px;
     height: 28px;
   }
-  .header__menu{
+  .header__menu {
     display: block;
   }
   .header__list {
@@ -187,12 +236,12 @@
     align-items: flex-start;
     background-color: #ebaca3;
     width: 100vw;
-    transform: translateX(-400px);
+    transform: translateX(-430px);
     transition: all ease 0.5s;
     z-index: 10000;
     margin-top: 10px;
   }
-  .crost{
+  .crost {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -200,28 +249,28 @@
     display: block;
     top: 20px;
   }
-  .dropdown{
+  .dropdown {
     display: none;
   }
-  .header__vector{
+  .header__vector {
     display: none;
   }
-  .header__list a{
+  .header__list a {
     font-size: 24px;
     font-weight: 700;
     margin-top: 20px;
   }
-  .header__list a:hover{
+  .header__list a:hover {
     color: white;
   }
-  .burger{
+  .burger {
     transform: translateX(0);
     transition: all ease 0.5s;
   }
   .header__right {
     display: none;
   }
-  .header-burger{
+  .header-burger {
     display: block;
   }
 }

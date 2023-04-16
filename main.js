@@ -3,11 +3,27 @@ const input = document.querySelector(".boy__input");
 const button = document.querySelector(".scroll");
 const header = document.querySelector(".header__block");
 const fixed = document.querySelector("header");
+const body = document.querySelector("body");
 const menu = document.querySelector(".header-burger");
 const ul = document.querySelector(".header__list");
 const crost = document.querySelector(".crost");
+const profile = document.querySelector(".header__right__img");
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modal__img");
+const modalMenu = document.querySelector(".header__right__list");
+modalMenu.addEventListener("click", (ev) => {
+  ev.preventDefault;
+  modal.classList.toggle("modal__block");
+  body.classList.add("bg__color");
+});
+modalImg.addEventListener("click", (el) => {
+  modal.classList.toggle("modal__block");
+});
+profile.addEventListener("click", (ev) => {
+  modal.classList.toggle("modal__block");
+});
 menu.addEventListener("click", (el) => {
-  ul.classList.add("burger");
+  ul.classList.toggle("burger");
 });
 crost.addEventListener("click", (ev) => {
   ul.classList.remove("burger");

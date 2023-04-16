@@ -64,11 +64,7 @@
   box-shadow: 3px 3px 15px 1px rgb(138, 136, 136);
   cursor: pointer;
 }
-.lessons__wrapper:hover .lessons__btn {
-  background-color: #9c4df4;
-  color: white;
-  transition: all ease 0.5s;
-}
+
 .lessons__wrapper h2 {
   font-weight: 600;
   font-size: 25px;
@@ -98,6 +94,11 @@
   border-radius: 5px;
   color: #9c4df4;
   transition: all ease 0.5s;
+}
+.lessons__btn:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #9c4df4;
 }
 .lessons__button {
   padding: 20px 30px;
@@ -189,12 +190,12 @@
   left: 0;
   top: -110px;
 }
-.person_img--second{
+.person_img--second {
   position: relative;
   left: 230px;
   top: -230px;
 }
-.person_img--third{
+.person_img--third {
   position: relative;
   top: -30px;
   left: -40px;

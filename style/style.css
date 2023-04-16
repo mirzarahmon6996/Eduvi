@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  transition: all ease 0.4s;
+}
+
 body {
   background-color: #eae4e4;
 }
@@ -28,6 +33,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header__fixed {
@@ -122,6 +131,10 @@ a {
   left: 0;
 }
 
+.bg__color {
+  background-color: red;
+}
+
 .parag {
   position: absolute;
   left: 0;
@@ -150,7 +163,7 @@ a {
   gap: 15px;
 }
 
-.header__right-list {
+.header__right__list {
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -158,11 +171,11 @@ a {
   color: #0a033c;
 }
 
-.header__right-list:hover {
+.header__right__list:hover {
   color: #ff6652;
 }
 
-.header__right-img {
+.header__right__img {
   cursor: pointer;
 }
 
@@ -226,6 +239,59 @@ a {
   display: none;
 }
 
+.modal {
+  width: 1000px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 15px;
+  z-index: 10000;
+  position: fixed;
+  top: 90px;
+  left: 250px;
+  visibility: hidden;
+  transition: all ease 0.5s;
+  padding: 20px;
+  opacity: 0;
+}
+
+.modal__block {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+
+.modal__wrapper {
+  margin-left: 50px;
+}
+
+.modal__img {
+  cursor: 2;
+  position: relative;
+  left: 900px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.modal__logo {
+  width: 80px;
+  height: 20px;
+}
+
+.modal__text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #0a033c;
+  margin-top: 15px;
+}
+
+.modal__person {
+  width: 332px;
+  height: 306px;
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 576px) {
   .container {
     width: 90%;
@@ -248,7 +314,7 @@ a {
     align-items: flex-start;
     background-color: #ebaca3;
     width: 100vw;
-    transform: translateX(-400px);
+    transform: translateX(-430px);
     transition: all ease 0.5s;
     z-index: 10000;
     margin-top: 10px;
@@ -364,6 +430,15 @@ a {
   width: 410px;
   display: none;
   height: 55px;
+  border-color: #ff6652;
+  border-radius: 10px;
+}
+
+.boy__list {
+  padding: 5px;
+  width: 120px;
+  outline: none;
+  border: none;
 }
 
 .boy_list {
@@ -803,12 +878,6 @@ a {
   cursor: pointer;
 }
 
-.lessons__wrapper:hover .lessons__btn {
-  background-color: #9c4df4;
-  color: white;
-  transition: all ease 0.5s;
-}
-
 .lessons__wrapper h2 {
   font-weight: 600;
   font-size: 25px;
@@ -840,6 +909,12 @@ a {
   border-radius: 5px;
   color: #9c4df4;
   transition: all ease 0.5s;
+}
+
+.lessons__btn:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #9c4df4;
 }
 
 .lessons__button {

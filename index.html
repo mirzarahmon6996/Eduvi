@@ -19,7 +19,7 @@
           /></a>
           <nav>
             <ul class="header__list">
-              <img class="crost" src="./img/icons/img-x.svg" alt="">
+              <img class="crost" src="./img/icons/img-x.svg" alt="" />
               <li class="header__bottom">
                 <p class="parag"></p>
                 <a href="./shop.html" target="_blank"> Shop</a>
@@ -102,9 +102,9 @@
               />
             </div>
             <div class="header__right-wrapper">
-              <a class="header__right-list" href="">My Account</a>
+              <a class="header__right__list" href="">My Account</a>
               <img
-                class="header__right-img"
+                class="header__right__img"
                 src="./img/icons/header__profile.svg"
                 alt=""
               />
@@ -118,6 +118,16 @@
         <button class="scroll">
           <img src="./img/icons/vector-white.svg" alt="" />
         </button>
+        <div class="modal">
+          <img class="modal__img" src="./img/icons/img-x.svg" alt="">
+          <div class="modal__wrapper">
+            <img class="modal__logo" src="./img/icons/header__logo.svg" alt="">
+            <h2 class="modal__text">Welcome to <br>
+              Eduvi Online <br>
+              Learning Platform</h2>
+              <img class="modal__person" src="./img/modal__img.png" alt="">
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -135,12 +145,18 @@
             </p>
             <div class="boy__content">
               <div class="boy__aside">
-                <span class="boy_list">Kindergarten</span
-                ><img
-                  class="header__vector"
-                  src="./img/icons/header__down.svg"
-                  alt=""
-                />
+                <select class="boy__list">
+                  <option value="Kindergarten">Kindergarten</option>
+                  <option value="Comfort">Comfort</option>
+                  <option value="upbringing">Upbringing
+                  </option>
+                  <option value="attention">Attention</option>
+                  <option value="
+                  Playgrounds">
+                  Playgrounds</option>
+                  <option value="Pool">Pool</option>
+                  <option value="Stadium">Stadium</option>
+                </select>
                 <span class="boy__hr"></span>
                 <input
                   class="boy__input"
