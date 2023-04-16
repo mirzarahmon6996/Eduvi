@@ -77,9 +77,6 @@
   position: relative;
   left: 0;
 }
-.bg__color{
-background-color: red;
-}
 .parag {
   position: absolute;
   left: 0;
@@ -170,49 +167,178 @@ background-color: red;
 }
 .modal {
   width: 1000px;
-  height: 600px;
+  height: 630px;
   background: #ffffff;
   border-radius: 15px;
   z-index: 10000;
   position: fixed;
   top: 90px;
   left: 250px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
   visibility: hidden;
-  transition: all ease 0.5s;
-  padding: 20px;
+  transform: scale(0);
   opacity: 0;
 }
 .modal__block {
   visibility: visible;
   opacity: 1;
-  transition: all ease 0.5s;
+  transition: all ease 0.3s;
+  transform: scale(1);
 }
-.modal__wrapper{
+.modal__wrapper {
   margin-left: 50px;
 }
 .modal__img {
-  cursor: 2;
-  position: relative;
-  left: 900px;
-  top: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 30px;
   width: 30px;
   height: 30px;
+  transition: all ease 0.4s;
+}
+.modal__img:hover {
+  transform: scale(1.2);
+  transition: all ease 0.4s;
 }
 .modal__logo {
   width: 80px;
   height: 20px;
 }
-.modal__text {
+.modal__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   color: #0a033c;
   margin-top: 15px;
 }
-.modal__person{
+.modal__person {
   width: 332px;
   height: 306px;
   margin-top: 30px;
+}
+.modul__hr {
+  width: 1px;
+  height: 500px;
+}
+.modal__wrap {
+  position: relative;
+  left: -50px;
+  width: 310px;
+}
+.modal__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #5d5a6f;
+}
+.modal__line {
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background: #5d5a6f;
+}
+.modal__aside {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.modal__google {
+  width: 250px;
+  height: 50px;
+  margin-left: 30px;
+}
+.modal__input {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  background: #ffffff;
+  border: 1px solid #dedde4;
+  border-radius: 5px;
+}
+.modal__input img {
+  width: 18px;
+  height: 18px;
+}
+.modal__form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.modal__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0a033c;
+}
+.input-modal {
+  border: none;
+  outline: none;
+  padding: 16px;
+  width: 300px;
+}
+.input-modal::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #5d5a6f;
+}
+.eye__logo {
+  height: 18px;
+  width: 18px;
+  margin-right: 16px;
+}
+.modal__checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.modal__checkbox-wrap input:first-of-type {
+  width: 17px;
+  height: 17px;
+}
+.modal__checkbox {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #5d5a6f;
+  cursor: pointer;
+}
+.modal__checkbox:hover¡ {
+  color: #ff6652;
+}
+.modal__btn {
+  background: #9c4df4;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  transition: all ease 0.2s;
+  border: none;
+}
+.modal__btn:hover {
+  box-shadow: 1px 1px 10px 1px #9c4df4;
+}
+.modal__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5d5a6f;
+  text-align: center;
+}
+.modal__link a {
+  color: #9c4df4;
 }
 @media only screen and (max-width: 576px) {
   .container {
@@ -236,7 +362,7 @@ background-color: red;
     align-items: flex-start;
     background-color: #ebaca3;
     width: 100vw;
-    transform: translateX(-430px);
+    transform: translateY(-1000px);
     transition: all ease 0.5s;
     z-index: 10000;
     margin-top: 10px;
@@ -248,6 +374,9 @@ background-color: red;
     right: 20px;
     display: block;
     top: 20px;
+  }
+  .parag{
+    display: none;
   }
   .dropdown {
     display: none;
@@ -264,7 +393,7 @@ background-color: red;
     color: white;
   }
   .burger {
-    transform: translateX(0);
+    transform: translateY(0);
     transition: all ease 0.5s;
   }
   .header__right {
