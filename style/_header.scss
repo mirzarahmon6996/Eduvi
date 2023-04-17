@@ -199,6 +199,19 @@
   height: 30px;
   transition: all ease 0.4s;
 }
+.modal__img__singin {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+.modal__img__singin:hover {
+  transform: scale(1.2);
+  transition: all ease 0.4s;
+}
 .modal__img:hover {
   transform: scale(1.2);
   transition: all ease 0.4s;
@@ -339,6 +352,37 @@
 .modal__link a {
   color: #9c4df4;
 }
+.modal__singin {
+  width: 1000px;
+  height: 630px;
+  background: #ffffff;
+  border-radius: 15px;
+  z-index: 10000;
+  position: fixed;
+  top: 90px;
+  left: 250px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.modal__aside__block {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+.modal__singin__span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+  margin-left: 54px;
+  cursor: pointer;
+  color: #5d5a6f;
+}
 @media only screen and (max-width: 576px) {
   .container {
     width: 90%;
@@ -374,7 +418,7 @@
     display: block;
     top: 20px;
   }
-  .parag{
+  .parag {
     display: none;
   }
   .dropdown {

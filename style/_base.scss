@@ -29,6 +29,15 @@ ul {
 a {
   text-decoration: none;
 }
-button{
+button {
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
+select {
+  cursor: pointer;
+}
+.modal__logo{
   cursor: pointer;
 }

@@ -10,6 +10,17 @@ const crost = document.querySelector(".crost");
 const profile = document.querySelector(".header__right__img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal__img");
+const modalsingin = document.querySelector(".modal__singin");
+const modal__btn = document.querySelector(".modal__ancer");
+const modal__img__singin = document.querySelector(".modal__img__singin");
+modal__img__singin.addEventListener("click", (ev) => {
+  modalsingin.classList.toggle("modal__aside__block");
+  modal.style.display = "none"
+  body.style.filter = "none";
+});
+modal__btn.addEventListener("click", (el) => {
+  modalsingin.classList.toggle("modal__aside__block");
+});
 modalImg.addEventListener("click", (el) => {
   modal.classList.toggle("modal__block");
   body.style.filter = "none";
