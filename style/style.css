@@ -250,7 +250,7 @@ button {
   align-items: stretch;
   justify-content: space-between;
   visibility: hidden;
-  transform: scale(0);
+  transition: all ease 0.3s;
   opacity: 0;
 }
 
@@ -258,7 +258,6 @@ button {
   visibility: visible;
   opacity: 1;
   transition: all ease 0.3s;
-  transform: scale(1);
 }
 
 .modal__wrapper {
@@ -1185,4 +1184,139 @@ button {
   position: relative;
   top: -30px;
   left: -40px;
+}
+
+.footer__top {
+  margin-top: 150px;
+}
+
+.footer__top__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__top__img {
+  width: 510px;
+  height: 521px;
+}
+
+.footer__top__title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #0a033c;
+  width: 435px;
+}
+
+.footet__top__subtitle {
+  font-weight: 400;
+  width: 500px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 20px;
+  color: #5d5a6f;
+}
+
+.footer__top__btn {
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: #9c4df4;
+  border-radius: 10px;
+  border: none;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.footet__top__wrapper {
+  background: #0a033c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 130px;
+  padding: 60px 50px;
+}
+
+.footer__top__contein {
+  width: 576px;
+}
+
+.footer__top__text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer__top__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__top form {
+  margin-top: 40px;
+}
+
+.footer__top__input {
+  width: 367px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px 0px 0px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.footer__top__button {
+  padding: 18px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: -5px;
+  text-align: right;
+  border: none;
+  background: #9c4df4;
+  border-radius: 0px 10px 10px 0px;
+  color: #ffffff;
+  border: 2px solid #9c4df4;
+}
+
+.footer__top__button:hover {
+  opacity: 0.8;
+  transition: all ease 0.3s;
+}
+
+.footer__img1 {
+  position: relative;
+  left: -260px;
+  top: -259px;
+}
+
+.footer__img2 {
+  position: relative;
+  left: -210px;
+  top: -140px;
+}
+
+.footer__img3 {
+  position: relative;
+  left: -339px;
+  top: 20px;
+}
+
+.footer__img4 {
+  position: relative;
+  left: 0;
+  top: 20px;
 }/*# sourceMappingURL=style.css.map */

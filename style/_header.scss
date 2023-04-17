@@ -179,14 +179,13 @@
   align-items: stretch;
   justify-content: space-between;
   visibility: hidden;
-  transform: scale(0);
+  transition: all ease 0.3s;
   opacity: 0;
 }
 .modal__block {
   visibility: visible;
   opacity: 1;
   transition: all ease 0.3s;
-  transform: scale(1);
 }
 .modal__wrapper {
   margin-left: 50px;

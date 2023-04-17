@@ -10,11 +10,6 @@ const crost = document.querySelector(".crost");
 const profile = document.querySelector(".header__right__img");
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal__img");
-const modalMenu = document.querySelector(".header__right__list");
-modalMenu.addEventListener("click", (ev) => {
-  ev.preventDefault;
-  modal.classList.add("modal__block");
-});
 modalImg.addEventListener("click", (el) => {
   modal.classList.toggle("modal__block");
   body.style.filter = "none";
