@@ -15,7 +15,15 @@ const modal__btn = document.querySelector(".modal__ancer");
 const modal__img__singin = document.querySelector(".modal__img__singin");
 modal__img__singin.addEventListener("click", (ev) => {
   modalsingin.classList.toggle("modal__aside__block");
-  modal.style.display = "none"
+  modal.style.display = "none";
+  body.style.filter = "none";
+});
+body.addEventListener("click", (el) => {
+  body.style.filter = "none";
+  modal.style.display = "none";
+});
+body.addEventListener("click", (el) => {
+  modalsingin.style.display = "none";
   body.style.filter = "none";
 });
 modal__btn.addEventListener("click", (el) => {
@@ -26,11 +34,8 @@ modalImg.addEventListener("click", (el) => {
   body.style.filter = "none";
 });
 profile.addEventListener("click", (ev) => {
-  modal.classList.toggle("modal__block");
+  modal.classList.add("modal__block");
   body.style.filter = "blur(10px)";
-});
-window.addEventListener("click ", (ev) => {
-  modal.classList.toggle("modal__block");
 });
 menu.addEventListener("click", (el) => {
   ul.classList.toggle("burger");
@@ -54,7 +59,7 @@ window.addEventListener("scroll", (el) => {
   }
 });
 window.addEventListener("scroll", () => {
-  header.classList.toggle("sticky", window.scrollY > 0);
+  header.classList.toggle("sticky", window.scrollY >= 0);
 });
 input.style.display = "none";
 btn.style.display = "block";
@@ -69,7 +74,6 @@ btn.addEventListener("click", (el) => {
     btn.style.display = "none";
   }
 });
-
 button.addEventListener("click", () => {
   scrollTo(0, 0);
 });

@@ -141,14 +141,6 @@
   color: #9c4df4;
   transition: all ease 0.4s;
 }
-.person__btn:hover {
-  transition: all ease 0.4s;
-  transform: translateY(-5px);
-  color: black;
-  background-color: white;
-  box-shadow: 2px 2px 5px 1px rgb(105, 103, 103);
-  cursor: pointer;
-}
 .person__title {
   font-weight: 700;
   font-size: 45px;
@@ -180,9 +172,7 @@
 .person__btn--second:hover {
   transition: all ease 0.4s;
   transform: translateY(-5px);
-  color: black;
-  background-color: white;
-  box-shadow: 2px 2px 5px 1px rgb(105, 103, 103);
+  
   cursor: pointer;
 }
 .person_img-first {
