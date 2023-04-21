@@ -388,7 +388,7 @@
   cursor: pointer;
   color: #5d5a6f;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {    
   .container {
     width: 90%;
     max-width: 576px;
@@ -447,7 +447,7 @@
   .header__right {
     display: none;
   }
-  .header-burger {
+  .header__burger {
     display: block;
   }
 }

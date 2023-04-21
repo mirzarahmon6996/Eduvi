@@ -575,7 +575,7 @@ select {
   .header__right {
     display: none;
   }
-  .header-burger {
+  .header__burger {
     display: block;
   }
 }
@@ -784,6 +784,17 @@ select {
   }
   100% {
     margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+    max-width: 576px;
+  }
+  .boy__block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 .quality {
@@ -1494,6 +1505,14 @@ footer {
   color: rgba(10, 3, 60, 0.4);
 }
 
+.book__title:hover {
+  color: #9c4df4;
+}
+
+.book__subtitle:hover {
+  color: #9c4df4;
+}
+
 .book__box {
   margin-left: 135px;
   display: flex;
@@ -1515,6 +1534,8 @@ footer {
 
 .popular {
   margin-top: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .popular__title {
@@ -1558,4 +1579,80 @@ footer {
   line-height: 20px;
   margin-top: 10px;
   color: #ff6652;
+}
+
+.book__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 20px;
+  color: #9c4df4;
+  margin-bottom: 40px;
+}
+
+.popular__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.popular__wrapper button {
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0a033c;
+  transition: all ease 0.4s;
+}
+
+.popular__wrapper button:hover {
+  background: #ff6652;
+  box-shadow: 0px 15px 50px rgba(255, 102, 82, 0.2);
+  border-radius: 10px;
+  color: white;
+  transition: all ease 0.4s;
+}
+
+.popular__wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.popular__box {
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 555px;
+}
+
+.popular__box input {
+  width: 450px;
+  padding: 22px 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.popular__contein {
+  width: 270px;
+  background: #ffffff;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.popular__contein select {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(93, 90, 111, 0.6);
 }/*# sourceMappingURL=style.css.map */

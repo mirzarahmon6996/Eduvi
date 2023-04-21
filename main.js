@@ -78,3 +78,7 @@ button.addEventListener("click", () => {
   scrollTo(0, 0);
 });
 console.log(scrollY);
+
+
+
+
