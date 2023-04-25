@@ -1,5 +1,4 @@
 const btn = document.querySelector(".boy__button");
-const input = document.querySelector(".boy__input");
 const button = document.querySelector(".scroll");
 const header = document.querySelector(".header__block");
 const fixed = document.querySelector("header");
@@ -13,6 +12,7 @@ const modalImg = document.querySelector(".modal__img");
 const modalsingin = document.querySelector(".modal__singin");
 const modal__btn = document.querySelector(".modal__ancer");
 const modal__img__singin = document.querySelector(".modal__img__singin");
+const popularButton =document.querySelector(".popopular__btn");
 modal__img__singin.addEventListener("click", (ev) => {
   modalsingin.classList.toggle("modal__aside__block");
   modal.style.display = "none";
@@ -22,10 +22,6 @@ body.addEventListener("click", (el) => {
   body.style.filter = "none";
   modal.style.display = "none";
 });
-body.addEventListener("click", (el) => {
-  modalsingin.style.display = "none";
-  body.style.filter = "none";
-});
 modal__btn.addEventListener("click", (el) => {
   modalsingin.classList.toggle("modal__aside__block");
 });
@@ -34,7 +30,7 @@ modalImg.addEventListener("click", (el) => {
   body.style.filter = "none";
 });
 profile.addEventListener("click", (ev) => {
-  modal.classList.add("modal__block");
+  modal.classList.toggle("modal__block");
   body.style.filter = "blur(10px)";
 });
 menu.addEventListener("click", (el) => {
@@ -60,19 +56,6 @@ window.addEventListener("scroll", (el) => {
 });
 window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY >= 0);
-});
-input.style.display = "none";
-btn.style.display = "block";
-btn.style.cssText = "align-items:center";
-btn.addEventListener("click", (el) => {
-  if (input.style.display == "none") {
-    input.style.display = "block";
-  }
-});
-btn.addEventListener("click", (el) => {
-  if ((btn.style.display = "block")) {
-    btn.style.display = "none";
-  }
 });
 button.addEventListener("click", () => {
   scrollTo(0, 0);

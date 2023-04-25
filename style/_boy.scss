@@ -47,7 +47,6 @@
   justify-content: space-between;
   padding: 5px 22px;
   position: relative;
-  height: 64.5px;
 }
 .boy__aside {
   display: flex;
@@ -59,17 +58,6 @@
   height: 30px;
   background: #dadada;
   margin: 0 25px;
-}
-.boy__input {
-  position: absolute;
-  left: 180px;
-  padding: 10px;
-  width: 410px;
-  display: none;
-  height: 55px;
-  border-color: #ff6652;
-  border-radius: 10px;
-  outline: #ff6652;
 }
 .boy__list {
   padding: 5px;
@@ -86,6 +74,9 @@
 .boy__button img {
   width: 24px;
   height: 24px;
+}
+.boy__inp {
+  display: none;
 }
 .boy__button {
   padding: 13px 30px;
@@ -187,13 +178,127 @@
     margin-left: 10px;
   }
 }
-@media only screen and (max-width: 576px) {  
-  .container{
+@media only screen and (max-width: 450px) {
+  .container {
     width: 90%;
-    max-width: 576px;
+    max-width: 450px;
   }
-  .boy__block{
+  .boy__block {
     display: flex;
-    align-items: center;flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
   }
- } 
+  .boy__btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 15px;
+  }
+  .boy__text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    width: 299px;
+    margin-top: 15px;
+  }
+  .boy__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+    width: 333px;
+  }
+  .boy__content {
+    width: 335px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+  }
+  .boy__list {
+    margin-bottom: 10px;
+    width: 290px;
+    padding: 17px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  .boy_list {
+    display: none;
+  }
+  .boy__hr {
+    display: none;
+  }
+  .boy__inp {
+    display: block;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 390px;
+    padding: 17px 20px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(93, 90, 111, 0.6);
+  }
+  .boy__button {
+    width: 335px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boy_bg {
+    margin-top: 50px;
+    width: 323px;
+    height: 339px;
+  }
+  .boy__img {
+    width: 323px;
+    height: 339px;
+  }
+  .box-img {
+    position: relative;
+    top: -350px;
+    left: -10px;
+    width: 39px;
+    height: 39px;
+  }
+  .box-img img {
+    width: 24px;
+    height: 24px;
+  }
+  .box-img2 {
+    position: relative;
+    top: -200px;
+    left: -10px;
+    width: 39px;
+    height: 39px;
+  }
+  .box-img2 img {
+    width: 24px;
+    height: 24px;
+  }
+  .box-img3 {
+    position: relative;
+    top: -380px;
+    left: 290px;
+    width: 39px;
+    height: 39px;
+  }
+  .box-img3 img {
+    width: 24px;
+    height: 24px;
+  }
+  .box-img4 {
+    position: relative;
+    top: -200px;
+    left: 290px;
+    width: 39px;
+    height: 39px;
+  }
+  .box-img4 img {
+    width: 24px;
+    height: 24px;
+  }
+}

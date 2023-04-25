@@ -10,7 +10,6 @@
   transition: all ease 0.5s;
 }
 .header__block {
-  width: 1240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -122,8 +121,8 @@
 }
 .scroll {
   position: absolute;
-  left: 20px;
-  top: 800px;
+  left: 1vw;
+  top: 85vh;
   padding: 15px;
   border-radius: 50%;
   background-color: #9c4df4;
@@ -152,22 +151,13 @@
   width: 30px;
   height: 30px;
 }
-.header__burger {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
 .header__menu {
-  display: none;
   font-size: 16px;
   line-height: 16px;
   text-align: right;
   color: #0a033c;
 }
 .crost {
-  display: none;
-}
-.header-burger {
   display: none;
 }
 .modal {
@@ -379,6 +369,9 @@
   opacity: 1;
   transition: all ease 0.3s;
 }
+.header__burger {
+  display: none;
+}
 .modal__singin__span {
   font-weight: 500;
   font-size: 16px;
@@ -388,33 +381,46 @@
   cursor: pointer;
   color: #5d5a6f;
 }
-@media only screen and (max-width: 576px) {    
+@media screen and (max-width: 450px) {
   .container {
     width: 90%;
-    max-width: 576px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .header__block {
+    padding-top: 30px;
+    width: 370px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .header__logo {
     width: 99px;
     height: 28px;
-  }
-  .header__menu {
-    display: block;
   }
   .header__list {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -22px;
     height: 100vh;
     align-items: flex-start;
     background-color: #ebaca3;
     width: 100vw;
-    transform: translateY(-1000px);
+    transform: translateX(-500px);
     transition: all ease 0.5s;
     z-index: 10000;
-    margin-top: 10px;
-  }
+    margin-top: 20px;
+    padding: 0;
+    -webkit-transform: translateX(-500px);
+    -moz-transform: translateX(-500px);
+    -ms-transform: translateX(-500px);
+    -o-transform: translateX(-500px);
+}
   .crost {
     width: 30px;
     height: 30px;
@@ -449,5 +455,28 @@
   }
   .header__burger {
     display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .add {
+    cursor: pointer;
+    position: fixed;
+    top: 85vh;
+    left: 1vw;
+    background-color: #9c4df4;
+    visibility: visible;
+    transition: all ease 0.3s;
+    opacity: 0.5;
+  }
+  .scroll {
+    position: absolute;
+    left: 1vw;
+    top: 85vh;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #9c4df4;
+    border: none;
+    visibility: hidden;
   }
 }
