@@ -12,15 +12,20 @@ const modalImg = document.querySelector(".modal__img");
 const modalsingin = document.querySelector(".modal__singin");
 const modal__btn = document.querySelector(".modal__ancer");
 const modal__img__singin = document.querySelector(".modal__img__singin");
-const popularButton =document.querySelector(".popopular__btn");
+const popularButton = document.querySelector(".popopular__btn");
+const headerMenu = document.querySelector(".header__menu");
+const modalMobile = document.querySelector(".modal__mobile");
+headerMenu.addEventListener("click", (ev) => {
+  modalMobile.classList.toggle("modal__mobile__block");
+});
 modal__img__singin.addEventListener("click", (ev) => {
   modalsingin.classList.toggle("modal__aside__block");
   modal.style.display = "none";
-  body.style.filter = "none";
 });
 body.addEventListener("click", (el) => {
   body.style.filter = "none";
   modal.style.display = "none";
+  modalMobile.style.display = "none"
 });
 modal__btn.addEventListener("click", (el) => {
   modalsingin.classList.toggle("modal__aside__block");
@@ -61,7 +66,3 @@ button.addEventListener("click", () => {
   scrollTo(0, 0);
 });
 console.log(scrollY);
-
-
-
-

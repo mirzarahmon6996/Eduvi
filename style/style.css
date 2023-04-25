@@ -245,6 +245,10 @@ select {
   display: none;
 }
 
+.modal__mobile {
+  display: none;
+}
+
 .modal {
   width: 70vw;
   height: 80vh;
@@ -606,11 +610,50 @@ select {
     border: none;
     visibility: hidden;
   }
-  .modal__wrapper {
+  .modal__mobile {
+    width: 350px;
+    z-index: 10000;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+    left: 5vw;
+    background: #ffffff;
+    border-radius: 5px;
     display: none;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
   }
-  .modul__hr {
-    display: none;
+  .modal__mobile__block {
+    opacity: 1;
+    z-index: 100000;
+    transition: all ease 0.5s;
+    display: block;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+  }
+  .mobile__img {
+    width: 295px;
+    height: 50px;
+  }
+  .mobile__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .modal__form {
+    width: 295px;
   }
 }
 .boy__block {
