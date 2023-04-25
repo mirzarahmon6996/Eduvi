@@ -661,7 +661,6 @@ select {
   align-content: center;
   justify-content: space-between;
   padding: 5px 22px;
-  position: relative;
 }
 
 .boy__aside {
@@ -808,7 +807,8 @@ select {
 @media only screen and (max-width: 450px) {
   .container {
     width: 90%;
-    max-width: 450px;
+    max-width: 430px;
+    margin: 0 auto;
   }
   .boy__block {
     display: flex;
@@ -847,6 +847,9 @@ select {
     width: 290px;
     padding: 17px 20px;
     background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
     border-radius: 5px;
   }
   .boy_list {
@@ -876,6 +879,8 @@ select {
     justify-content: center;
   }
   .boy_bg {
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-top: 50px;
     width: 323px;
     height: 339px;
